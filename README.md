@@ -7,3 +7,4 @@ Step-by-step write-ups for Mobile Hacking Lab (MHL) challenges
 | # | Lab | Topic | Link |
 |---|-----|-------|------|
 | 1 | IoT Connect | Broadcast Receiver — weak PIN check | [Write-up](IOT-Connect.md) |
+| 2 | Strings | Deep Link Activity — SharedPrefs bypass, AES decryption, native memory search | [Write-up](Strings.md) |
