@@ -195,9 +195,9 @@ This condition checks the URI we send, three things need to be true:
   if (decodedValue != null) {
 ```
 
-  This just checks that the decoding actually worked — if `base64Value` wasn't valid Base64, `decodedValue` would come back `null` and this check would fail.
-- `uri.getScheme() == "mhl"` — the URI's scheme must be `mhl`.
-- `uri.getHost() == "labs"` — the URI's host must be `labs`.
+  This just checks that the decoding actually worked if `base64Value` wasn't valid Base64, `decodedValue` would come back `null` and this check would fail.
+- `uri.getScheme() == "mhl"` the URI's scheme must be `mhl`.
+- `uri.getHost() == "labs"` the URI's host must be `labs`.
 
 Put together, this means the URI we send has to look like `mhl://labs/...`.
 
