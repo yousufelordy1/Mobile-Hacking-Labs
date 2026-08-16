@@ -1,6 +1,6 @@
 # IoT Connect
 
-This lab focuses on broadcast receivers, which is an Android component that listens for system-wide or app-wide messages (called broadcasts) and reacts to them — even without the app being open. Apps use them to respond to things like "battery low," "SMS received," or custom messages sent by other apps. If a receiver is exported and doesn't properly validate what it receives, any other app (or an attacker with adb access) can send it a crafted broadcast to make it do something it wasn't supposed to do. This lab walks through exactly that.
+This lab focuses on broadcast receivers, which is an Android component that listens for system-wide or app-wide messages (called broadcasts) and reacts to them even without the app being open. Apps use them to respond to things like "battery low," "SMS received," or custom messages sent by other apps. If a receiver is exported and doesn't properly validate what it receives, any other app (or an attacker with adb access) can send it a crafted broadcast to make it do something it wasn't supposed to do. This lab walks through exactly that.
 <p align="center">
   <img width="237" height="191" alt="logo" src="https://github.com/user-attachments/assets/34f90f55-ae5c-4fdf-bc96-94062030fb1b" />
 </p>
@@ -70,7 +70,7 @@ Breaking down the conditions inside `onReceive()`:
 - `int key = intent.getIntExtra("key", 0)` the receiver expects an integer extra called `key`, which is really just the PIN. If we don't send one, it defaults to `0`.
 - `Checker.INSTANCE.check_key(key)` this is the actual PIN check. If it returns `true`, all devices turn on and we get the "All devices are turned on" toast. If `false`, we get "Wrong PIN!!".
 
-So the real target here is `check_key()` — we need to find which PIN makes it return `true`.
+So the real target here is `check_key()` we need to find which PIN makes it return `true`.
 
 Guessing a random 3-digit PIN isn't realistic, you'd need way too many tries by hand, and if you already knew it, you'd just type it in through the app's UI. 
 
