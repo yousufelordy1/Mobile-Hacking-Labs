@@ -2,7 +2,7 @@
 This lab focuses on capturing a flag hidden inside the app's memory by looking into the exported activities, as they told us as a hint: look into the exported activities. So our mission is to find a way to trigger that activity because once it's triggered, the flag gets loaded into the app's memory. From there, we'll need to search into the app's memory to find it, and as another hint, the instructions told us that the flag follows this format: `MHL{...}`, so once we trigger the activity, we know what format to search for.
 
 <p align="center">
-  <img width="237" height="191" alt="logo" src="https://github.com/user-attachments/assets/c9856e49-54fb-46e7-a3d4-352950230ef7" />
+  <img width="220" alt="logo" src="https://github.com/user-attachments/assets/c9856e49-54fb-46e7-a3d4-352950230ef7" />
 </p>
 
 <p align="center">
