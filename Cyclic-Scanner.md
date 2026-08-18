@@ -3,7 +3,7 @@
 This lab focuses on achieving Remote Code Execution (RCE) through a vulnerable Android service. A service is an Android component that runs in the background, without using the UI, it's for things like scanning files, playing music, or syncing data while the app isn't even open.
 
 <p align="center">
-  <img width="237" height="191" alt="logo" src="https://github.com/user-attachments/assets/22054f72-b7c4-4631-8592-5eb2ae255324" />
+  <img width="220" alt="logo" src="https://github.com/user-attachments/assets/22054f72-b7c4-4631-8592-5eb2ae255324" />
 </p>
 
 <p align="center">
